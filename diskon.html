@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hitung Diskon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <h1>UTS Pemograman Web</h1>
+      </div>
+      <div class="row">
+        <div class="col-9 col-m-7">
+          <div id="konten">
+            <script>
+              function diskon(hargaAwal) {
+                var diskon;
+                diskon = 0.5 * hargaAwal;
+                hargaDiskon = hargaAwal - diskon;
+                return hargaDiskon;
+              }
+              var harga = prompt("Masukan Harga : Rp. ");
+              document.write(
+                "Harga Setelah diskon 50% Menjadi : Rp. " + diskon(harga)
+              );
+            </script>
+          </div>
+        </div>
+        <div class="col-3 col-m-5">
+          <div id="silebar">
+            <div id="judul_silebar">MENU</div>
+            <div id="isi_silebar">
+              <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="form.html">Mahasiswa</a></li>
+                <li><a href="diskon.html">Hitung Diskon</a></li>
+                <li><a href="datadosen.html">Data Dosen</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="clear: both"></div>
+      <div class="row">
+        <div id="footer">
+          <div id="text">Copyright by Abdillah Rahman</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
